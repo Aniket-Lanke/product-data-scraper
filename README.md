@@ -331,41 +331,6 @@ Change `BASE_URL` and `START_URL` to the new website.
 | `PermissionError: [Errno 13] Permission denied: '...products.xlsx'` | The Excel file is open in Microsoft Excel while the script tries to overwrite it. | Close `products.xlsx` in Excel and run the script again. |
 | Encoding Artifacts (e.g., `Â£`) | Mismatched UTF-8 decoding of European currency symbols on Windows CMD. | Cleaned automatically by `DataCleaner.extract_price()`, which isolates pure numeric float values. |
 
----
-
-## How to Upload This Project to GitHub
-
-Follow these commands in Windows CMD or Git Bash:
-
-```cmd
-# 1. Initialize a new Git repository
-git init
-
-# 2. Stage all project files (.gitignore will exclude large generated files/venv)
-git add .
-
-# 3. Create initial commit
-git commit -m "feat: complete e-commerce product scraper and price analysis system"
-
-# 4. Rename default branch to main
-git branch -M main
-
-# 5. Add your GitHub remote repository (replace with your GitHub URL)
-git remote add origin https://github.com/YOUR_USERNAME/product-data-scraper.git
-
-# 6. Push code to GitHub
-git push -u origin main
-```
-
----
-
-## Best Practices & Ethical Scraping Guidelines
-
-1. **Polite Request Rates**: Always include delays between requests (`REQUEST_DELAY = 1.0` or higher) to avoid overwhelming web servers.
-2. **Respect robots.txt**: Never scrape paths disallowed by the website operator.
-3. **No Auth Bypass**: Never bypass CAPTCHAs, paywalls, or login controls without authorization.
-4. **Data Privacy**: Avoid scraping or storing Personally Identifiable Information (PII).
-5. **Caching**: Store raw scraped data locally to prevent re-scraping the same pages during data cleaning iterations.
 
 ---
 

@@ -1,0 +1,29 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+ENV/
+env/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Output Data & Logs (keep directories via .gitkeep if desired)
+data/*.csv
+data/*.xlsx
+output/*.png
+output/*.txt
+logs/*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db

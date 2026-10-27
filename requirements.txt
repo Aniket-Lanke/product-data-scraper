@@ -1,0 +1,13 @@
+# Core HTTP & Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Data Cleaning & Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Excel File Generation
+openpyxl>=3.1.0
+
+# Visualizations & Plotting
+matplotlib>=3.8.0
